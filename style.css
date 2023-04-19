@@ -95,9 +95,7 @@ footer {
     margin: 20px;
 }
 
-main {
-
-}
+main {}
 
 form {
     margin: 40px 0;
@@ -152,7 +150,8 @@ thead {
     font-weight: bold;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #000000;
     padding: 8px 15px;
 }
@@ -164,10 +163,14 @@ td, th {
 
 .titulo-principal {
     text-align: center;
-    font-size: 2em; /* tamanho da fonte 2x o tamanho da fonte principal*/
-    margin: 0 0 1em; /* margem para baixo 2x o tamanho da fonte principal*/
-    clear:left /*limpa o float e alinha o conteudo (texto: beneficios) abaixo do fim da imagem*/
+    font-size: 2em;
+    /* tamanho da fonte 2x o tamanho da fonte principal*/
+    margin: 0 0 1em;
+    /* margem para baixo 2x o tamanho da fonte principal*/
+    clear: left
+        /*limpa o float e alinha o conteudo (texto: beneficios) abaixo do fim da imagem*/
 }
+
 .principal {
     padding: 3em 0;
     background: #FEFEFE;
@@ -189,12 +192,19 @@ td, th {
 
 .utensilios {
     width: 150px;
-    float:left; /*eleva o elemento e o conteudo abaixo sobem*/
+    float: left;
+    /*eleva o elemento e o conteudo abaixo sobem*/
     margin: 0 20px 20px 0;
 }
 
 .mapa {
     padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .mapa p {
@@ -205,25 +215,32 @@ td, th {
 .beneficios {
     padding: 3em 0;
     background: #888888;
-} 
+}
 
 .conteudo-beneficios {
-    width: 640px; /*LARGURA*/
+    width: 640px;
+    /*LARGURA*/
     margin: 0 auto;
 }
 
 .lista-beneficios {
     width: 40%;
     display: inline-block;
-    vertical-align: top; /*lista vai alinhar com o topo*/
+    vertical-align: top;
+    /*lista vai alinhar com o topo*/
 }
 
 .itens {
-    line-height: 1.5; /*altura da linha, normalmente é proporcional ao tamanho da fonte*/
+    line-height: 1.5;
+    /*altura da linha, normalmente é proporcional ao tamanho da fonte*/
 }
 
 .itens:first-child {
     font-weight: bold;
+}
+
+.itens::before {
+    content: "✧";
 }
 
 .imagem-beneficios {
